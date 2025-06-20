@@ -8,6 +8,41 @@
 
 ## STEP BY STEP GUIDE FOR CREATING THIS PROJECT
 
+### 0. File formate should look like this :  
+
+````
+ServletProject1/
+├── Deployment Descriptor: ServletProject1
+├── JAX-WS Web Services
+├── Java Resources/
+│   ├── Referenced Libraries/
+│   │   ├── jstl-1.2.jar
+│   │   └── postgresql-42.7.7.jar
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com/
+│                   └── example/
+│                       ├── AddServlet.java
+│                       ├── DBUtil.java
+│                       ├── HelloServlet.java
+│                       ├── HelloWorldServlet.java
+│                       ├── JspServlet.java
+│                       ├── Laptop.java
+│                       └── LaptopServlet.java
+└── webapp/
+    ├── META-INF/
+    ├── WEB-INF/
+    │   ├── lib/
+    │   └── web.xml
+    ├── index.html
+    ├── laptops.jsp
+    ├── newjsp/
+    └── README.md
+````
+
+
+
 ### 1. CREATE WEB.XML
 
 1. Location : src/main/webapp/WEB-INF/web.xml
@@ -103,5 +138,16 @@ public class AddServlet extends HttpServlet {
 
 - Click Apply and Close.
 
-	
-	
+
+### 5. Download Jar from : 
+````
+	- 1. postgresql-42.7.7.jar : https://drive.google.com/drive/folders/1yGpnuBw-n_LWRfOTesecj8CbY7Ruk9zX?usp=sharing
+	- 2. jstl-1.2.jar : https://drive.google.com/drive/folders/1yGpnuBw-n_LWRfOTesecj8CbY7Ruk9zX?usp=sharing
+````
+
+
+
+
+
+
+
