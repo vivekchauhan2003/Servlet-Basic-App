@@ -85,5 +85,23 @@ public class AddServlet extends HttpServlet {
     }
 }
 ````
+
+### 4. Adding .jar file to project
+
+✅ For Java Project
+- Open Eclipse and go to your Java Project.
+
+- Right-click on your project in the Package Explorer
+		→ Click on Build Path
+		→ Select Configure Build Path...
+
+- In the Properties window, go to the Libraries tab.
+
+- Click on Add External JARs...
+		→ Navigate to the location of your .jar file
+		→ Select it and click Open.
+
+- Click Apply and Close.
+
 	
 	

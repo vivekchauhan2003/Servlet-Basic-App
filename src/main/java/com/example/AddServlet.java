@@ -2,7 +2,6 @@ package com.example;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,5 +20,7 @@ public class AddServlet extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         out.println("<h2>Sum is: " + k + "</h2>");
+  
     }
 }
+
