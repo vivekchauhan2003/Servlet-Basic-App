@@ -26,6 +26,21 @@ public class LaptopDAO {
 
         return laptop;
     }
+    
+    public boolean insertLaptop(Laptop laptop) throws SQLException {
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(
+                 "INSERT INTO laptop (brand, model) VALUES (?, ?)")) {
+
+            stmt.setString(1, laptop.getBrand());
+            stmt.setString(2, laptop.getModel());
+
+            return stmt.executeUpdate() > 0;
+        }
+    }
+
+
+
 
     // Other methods like getAllLaptops(), deleteLaptop(), etc.
 }
