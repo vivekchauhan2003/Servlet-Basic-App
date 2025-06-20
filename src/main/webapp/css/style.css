@@ -1,0 +1,116 @@
+@charset "UTF-8";
+:root {
+    --pastel-blue: #a7c5eb;
+    --pastel-green: #b8e0d2;
+    --pastel-peach: #f7c1bb;
+    --pastel-lavender: #e3d0ff;
+    --pastel-yellow: #f9e79f;
+    --text-dark: #3a3a3a;
+    --text-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    min-height: 100vh;
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #6c63ff;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #6c63ff, #4facfe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.table-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+th {
+    background: linear-gradient(135deg, var(--pastel-blue) 0%, var(--pastel-lavender) 100%);
+    color: var(--text-dark);
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(168, 197, 235, 0.1);
+}
+
+tr:hover td {
+    background-color: rgba(231, 208, 255, 0.3);
+    transform: translateX(4px);
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+/* Add some decorative elements */
+.header::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #6c63ff, #4facfe);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
