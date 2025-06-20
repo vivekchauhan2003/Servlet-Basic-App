@@ -1,5 +1,5 @@
 // Laptop.java
-package com.example;
+package com.example.model;
 
 public class Laptop {
     private int lid;
