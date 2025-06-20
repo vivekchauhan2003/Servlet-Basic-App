@@ -23,22 +23,32 @@ ServletProject1/
 │           └── java/
 │               └── com/
 │                   └── example/
-│                       ├── AddServlet.java
-│                       ├── DBUtil.java
-│                       ├── HelloServlet.java
-│                       ├── HelloWorldServlet.java
-│                       ├── JspServlet.java
-│                       ├── Laptop.java
-│                       └── LaptopServlet.java
-└── webapp/
-    ├── META-INF/
-    ├── WEB-INF/
-    │   ├── lib/
-    │   └── web.xml
-    ├── index.html
-    ├── laptops.jsp
-    ├── newjsp/
-    └── README.md
+│                       ├── controller/
+│                       │   ├── AddServlet.java
+│                       │   ├── HelloServlet.java
+│                       │   ├── HelloWorldServlet.java
+│                       │   ├── JspServlet.java
+│                       │   └── LaptopServlet.java
+│                       │
+│                       ├── dao/
+│                       │   └── LaptopDAO.java
+│                       │
+│                       ├── model/
+│                       │   └── Laptop.java
+│                       │
+│                       └── util/
+│                           └── DBUtil.java
+├── webapp/                            <-- ✅ View Layer
+│   ├── META-INF/
+│   ├── WEB-INF/
+│   │   ├── lib/
+│   │   └── web.xml
+│   ├── index.html
+│   ├── laptops.jsp
+│   ├── error.jsp                      <-- Optional: for error handling
+│   ├── newjsp/                        <-- (Optional: consider renaming to meaningful folder like 'pages/')
+│   └── README.md
+
 ````
 
 
